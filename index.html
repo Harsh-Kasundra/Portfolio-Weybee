@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+        <div class="home-content flex-center-col">
+          <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?semt=ais_hybrid&w=740" alt="Profile" class="profile-img" />
+          <h1>Hello, I'm <span class="highlight">Harsh Kasundra</span></h1>
+          <p class="tagline">Passionate Software Developer crafting scalable & impactful web solutions.</p>
+          <a href="#projects" class="btn">View My Projects</a>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p class="bio">Hi, I'm a passionate developer who enjoys creating clean and user-friendly web experiences. I believe in learning continuously and building things that matter.</p>
+            <div class="about-subsection">
+              <h3>🎓 Education</h3>
+              <p>Bachelor’s in Computer Science, Darshan University</p>
+            </div>
+            <div class="about-subsection">
+              <h3>💡 Interests</h3>
+              <p>Web Development, Frontend Development, FullStack Development,</p>
+            </div>  
+          </div>
+          <div class="about-visual">
+            <div class="floating-card">👨‍💻</div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="skills">
+        <h2>My Skills</h2>
+      
+        <div class="skills-container">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-html5" style="color: #e34c26;"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-js-square" style="color: #f0db4f;"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" />
+                  <span>TypeScript</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-react" style="color: #61dafb;"></i>
+                  <span>React.js</span>
+                </div>
+                <div class="skill-card">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="40" />
+                  <span>Next.js</span>
+                </div>
+                <div class="skill-card">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///9NtqxAsqhHtKpDs6lJtao9sqf6/f3q9vWEysPh8vDp9fT3/Puk19Lu+PfL6OVdvLNUua+Rz8nb7+1pwLjS6+h4xr6239rB4+Ca082Ozsiq2dW64d1/yMFau7Ki1tEMITKlAAALDElEQVR4nO1daZuzKgy9uHVfnLZ2n/7/f3nVLjYKGEIAnec9nztTaIAkJ4fw33/esTxd9nm+nR3X/r/bByarOItFiTTJZvPQo3GA+TYSHyTpLfR42LGLU/GFNLuGHhEzpmksIKJT6DHxYt+eYIlp6EFx4ph1J5hcQo+KEWuJBYXI/pAR79IZpn/HiKdINsHSiH/F8y9z+QRFcg49NCZcEsUMhfgbRjxIztG3ER+hB8eCrfSYeWEZenQMWKlNWBrxD8Ruc/UmrJCGHp89ZOHaF6Jj6AHa4qZwhR/koUdoibV+jVZGHHmiOEv7ZhhvJ6EHaYNN3xoVI88Tl7n+mHkacR96mBb46d2FFbJN6HGSsdP5+i8jbkMPlIweV9gY8RB6pERcEcdMjXSkO3GusWCLeBupEQvlDKPtfQvsG99DD5aCk/KYSapQ9AiO2WiEJP9S6She1MX5+wNjNKI6XIt29QfWwMbZ6Iy4UbvC6BWHAvYmnoUdrzEmv8pj5uPfp+CwGRs7fFaHaw2DCIyY/IQcrzHmmnCtSSVa/MaojKgL17LF52Oz74+NiljUhWupaD4HTR2Phx1e6AJu4PmKkRpRHa5V81h9fRKmV8lY6Ax1uFYBprvFd1wwFnZYHa49VynYba2SxjiMqCk0VRPcw1kAI2ajYIc1haZ6hq3oDJBxoyAWJ9pC0ytz+gZwndkIiMVzD/mU7Vp/AEL0EXBSunDtiY5bBzH68NnhfQ+JL2F/T6MyYi+7lkoyCGDEgbPDC9FXh5GtQlB/GzjFL9cFfUNGViyhEYdMLOrDtef4ZX93BTux8D1sPCb9ZZhUOnwoKOr4k+FAH67VAIlFgyvgpAZrxJ5w7Wkf+Uk5GQWx2BeuPQevSOMfY2CHH4hCkzKyXgMvM0wjzjGVtFipJwXs4zC1w33h2nPoyiR+CpZ4vFB9LhxkMu4uNI7gZ+Ds8LQ3XKuQ5mq+cApczfCIxRlKc6GNOSE7PDTtMEYXJOSJxQcL6BOHRWdMUPPrS2+HTPHjdEHlsLV+riW+GZJ2eIcVlcT6/wNyryGxw6hwrYI8sWgAjZgPx4grrAkViUUDUO8YDju8QG5CBAVzAL/Vr5fhI4DVrmGuAA2SHT5i1yjGKNCIwxCAr1HhWg11YtFgPzx2GBeu1ehULCSA7PAQiEWNLqiDCMMwQSOGZ4cnqlt3UmAcHDDiAGSn2HCtAnLNDYsdRsq4XwbBZbXgbA5OLOJdocCfjOCPArPDaBl3DX1i0WBARlygPWGNHJnTtij+kMSiVhfUQV9i0QDWaQLKTm8mxwwisfgAGhG7uPmxNpqfkfd+DINYRBSa4Azx/CAUVSWBiEUku/YFg39+HoARNTJuOYxOjJaKPwidoZFxy4FJLBpAij8EO9yvC2oDlVh80GJGAhjRKFx7GsKMw4YqfrSjYcPV2ISmySxU8XsnFhexWbwmCHsJUPzemxKYhWvPMZreuW/tdCfzUAKhC+ogMy7qFuGMuDSfnxC/xjtpF45YNA3XKuATiwZFKGLxYByuCVo18AAF4PwzUQBdaAIg0YJAxe/PiBhdUBcx5VraJgg7vCCco4J6UIDlEnkiFs3DtdoANCpiE0A7jNMFdWCWWDQARvRCLJoyF7aDA70IKR7HGHfjePQ1Q+L3TXwbkRKuVaBvIajidy47xeqCOqAn6ZAscU4smhSaACyaeQEBuOtup6RwrYZ5YtEApKJumxLQwrUa2IqFDB6NiNYFdZDanBBL8Lu6bFlLDNcq2MkMH76IRZSMWw67UjWMMlJnRjTQBXWQ2snSIcXvSnZKDdcq2CavU7h6HBGLBrqg7gxta5zADzt6bsBEF9QBNbH4ANRp0tiFAJwcrj1/deuA+eKcWCSHazXs23lAdtgBsYi5dacGB0s2c6sdntCYizc4nPQO3N1j7yxhpgvqgIUGvLtkhy3CtRo2icUHO5eclN0aFUxlI9jjhVV2aqgL6oBJmLZz1lnCJlyrwVWhBpE/p+zUJlx7DoZpRR0caYetwrUabIomN0Y0k3HL0O4KRQdU8XMRi8a6oO4M+cSTLthhIxm3HNaJRQMXRrRgLt7gZOLBlmHpO2wZrj3ByKvcuLXDU+tNyB1gQQG4PTtsHa4J9B0LJAAdZi87pRaaAHjTACgAJ2kDlP+NCua7BFdOYpGiC+oi4pnZG1COZccOm8u4ZWAvTK/YZKfGMm452KWvS3A4pBYRoX24VoO/fx6k+OnssLmMWzFD9jpK67FPshEZwrUKLuR20IjUqJeoC+rO0EHJFlyYoxKL8mdfCWBMLBpcQCZM00DwuELhSOKzYOCkWFyh0HeFssDMurMEXVXSgiM1ITjoY0p7ENXTvcbgTSwa3G2bErAkFfWXOxIuW1P89gziC85kaIVlU4Il1wydXXQB7DClbEC49CODQ8UrZIfNfRIDiVjB4Z26g63s1K5u/4bLxtyQHTbf7xYyxO8vdnhpcGNrRDttwgtOL2PZGpEjA3bb7gFS/JQcxp7FcJJYfAA3EqVlrf15anZ52xiA4iexww/rder4djJkhylZjOV56vyaEqT4KeywJRvlvpsFsEBEWTF06Xr9lc5vRF6tjWjHuLlvnNOqrFCMuLM5bMwvbxtjZc8OWxSBfVylg2omWmcJ+jr10qwDRF407TD9PPXS03FtzUlRmpi8Z+iluRNU8dNOb3K+zzwXOdYMAnDd8+ga+Oojd7Fmh6nr1G1i0YDlPjtJdOI4sfig9YwpLcqYkmbo6WWDG3yBnrhyCNVEb00s4AIjX3wwP099dVh7wB+ffL6tjRtfeWm1MjkUraiSXnM21utHzp/6WdxmImqvLYulY7pO3SYWy8N5n3SmJ6yWjmFl32VisTgWIkvk47HR8plVTV0lFsvNOc8S5aFgp4yemRw2LhKLye5apJk2J7cTQhqtU/Y3xdany1ZjvNcELV2USe2b93GR3WorPVdaSKw3P/5+EGNiUTqFWHWuAKSZ/fWENVo0zJRYKJ2C7Ctjju9Er1MOKdS8dAoRxnil+ZLs98pDKWDVYNSuUG8sNz+ly0sxp3ecRqI4sh1syGv5VprLyfxaJBnONaVJtP3ZsIZPOKUNPTqsnELU5xTev2OWFdcFexqKWqfE6HC32qfIc6U0Xv6zcZJkowTuhMvb09ssQTmF0nZxJoqru6IIRrdo2BWqcgoZ0nhxufMuG7dUbL/UxqgrVOkUcqTxqp23v87dE0B533DQlbzJ5keXKcDZJUk+4z02lehdpygp1LJ0ChnSKYh653l8UadPatOfWEwxmcLHeFl+Ofl94aJHEtbn70unIKIYufOibHvd+X9UVi+10SUW69s9QgabtfFmp0APdZ51U1QlFiZOoTResl8FMN4HunWayI4EI6eQZGJ2c9oCsh+6dRq3F1aZKeRJhjVelm1XYR8ie0InCfv+nJlTKKPN2Smw8T5Ql9yaVVo6hV9splDuvGj/2A3nBWCNhCHe18M8PPYCvTSTKAu+8zpQS8JScb7eE6xTKHdevH2EfsdRCk1pOEHPrtx592PIx/F0IEoYGqRJtj8fBrTzOrDpC1LtvOI4tJ3XAVESlpaZ0PYc/hlcBBakx0rKTGiwO68DU6lNGY/9nj2lsUwwKA3HaRTvx2O8NxbIV8fTcucxU7e+gJHaxFlS+CCQHKFHElZlQiM13hsaqU0cR2LvkLr1BYXUJvVA3frCT3eKVdFkNd6d1wGcYhmPxb6oW2845dFrM9Y7bwgcBDeWx6JcmFG2vQyGg+DHen7Yrf/Y2vyHf/gHHvwP+4iF1/DoBQgAAAAASUVORK5CYII=" alt="Prisma ORM" width="40" />
+                  <span>Prisma ORM</span>
+                </div>
+              </div>
+      
+          <div class="skills-group">
+            <h3>Soft Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-card soft">Consistency</div>
+              <div class="skill-card soft">Teamwork</div>
+              <div class="skill-card soft">Adaptability</div>
+              <div class="skill-card soft">Time Management</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="projects" class="project-wrapper">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="https://cdn.dribbble.com/userupload/43483123/file/original-f0b39bcff7a2305b5399a7e7541c9c2d.png?resize=1024x768&vertical=center" alt="Project 1 Image" />
+            <h3>Mind Cache (second Brain)</h3>
+            <p>An intuitive app that simplifies Your Content storing and share your stored content with others</p>
+            <div class="tags">
+              <span>React</span>
+              <span>typescript</span>
+              <span>Prisma ORM</span>
+              <span>PostgreSQL</span>
+              <span>Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#">View Live</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <img src="./image.png" alt="Project 2 Image" />
+            <h3>Portfolio Website</h3>
+            <p>A modern personal portfolio to showcase skills, projects, and experience using HTML, CSS, and JS.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#">View Live</a>
+              <a href="#">GitHub</a>
+            </div>
+        </div>
+        </div>
+      </section>
+      
+  </main>
+  <section id="contact" >
+    <div class="contact-section">
+    <h2>Get in Touch</h2>
+    <p class="contact-intro">Feel free to reach out or connect with me on social media.</p>
+  
+    <div class="contact-container">
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kasundraharsh0611@gmail.com" target="_blank" class="icon-link" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            <a href="https://in.linkedin.com/in/harsh-kasundra" target="_blank" class="icon-link" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Harsh-Kasundra" target="_blank" class="icon-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+  
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
